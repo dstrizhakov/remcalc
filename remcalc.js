@@ -1,4 +1,5 @@
 (function (doc, win) {
+
     const fontSize = 16;
     const bpMobile = 767;
     const bpTablet = 1200;
@@ -6,11 +7,10 @@
     const widthTablet = 768;
     const widthMobile = 320
     const docEl = doc.documentElement;
-    const resizeEvt =
-        'orientationchange' in window ? 'orientationchange' : 'resize';
+    const resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+
     const recalc = function () {
         const appWidth = window.innerWidth;
-        // const { clientWidth: appWidth } = docEl;
         if (!appWidth) {
             return;
         }
